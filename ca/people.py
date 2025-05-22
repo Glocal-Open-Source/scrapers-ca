@@ -93,6 +93,9 @@ class CanadaPersonScraper(CanadianScraper):
             #   Telephone: xxx-xxx-xxxx<br/>
             #   Fax: xxx-xxx-xxx
             # </p>
+
+            fax = None # testing safety net
+            
             phone_el = mp_page.xpath(
                 './/h4[contains(., "Hill Office")]/../p[contains(., "Telephone")]|.//h4[contains(., "Hill Office")]/../p[contains(., "Téléphone :")]'
             )
